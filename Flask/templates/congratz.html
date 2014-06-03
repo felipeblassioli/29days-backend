@@ -1,0 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Desafio 29 days</title>
+</head>
+<body>
+    <ul id="photos">
+    {% for item in images %}
+        <li><img src="{{ item['url'] }}" title="{{ item['challenge'] }}"/></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

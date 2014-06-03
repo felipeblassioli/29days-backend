@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+    ServerAdmin felipeblassioli@gmail.com.br
+    ServerName  29days.myeyes.com.br
+
+    DocumentRoot /opt/dummy
+    CustomLog /var/log/apache2/29days.access.log combined
+    ErrorLog /var/log/apache2/29days.error.log
+
+    WSGIScriptAlias / /var/www/app
+</VirtualHost>
